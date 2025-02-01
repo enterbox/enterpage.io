@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
-<body>
-
+<head> 
+<meta charset="utf-8"> 
+</head> 
+<title>enterPAGE</title>
+<style>
+p.inset{
+	font-family:"Times New Roman",Times,serif;
+	font-size:14px;
+	border-style:inset;
+	border-width:10px;
+}
+</style>
+<h3>每日毒鸡汤<h3>
+<p id="dailysoup" class ="inset">.<p>
 <script>
-var i;
 var soup = new Array();
 soup[0] = "既然选择远方，当不负青春，砥砺前行";
 soup[1] = "青春由磨砺而出彩，人生因奋斗而升华！";
@@ -15,8 +26,5 @@ soup[6] = "只有一条路不能选择――那就是放弃";
 soup[7] = "没有一种不通过蔑视、忍受和奋斗就可以征服的命运";
 soup[8] = "勇气不是感觉不到恐惧而是感觉到恐惧也继续做下去";
 soup[9] = "忙碌的生活是磨砺意志的砂轮，每一道火花都是成功的预告";
-document.write(soup[Math.floor(Math.random() * 10)] + "<br>");
-
+document.getElementById("dailysoup").innerHTML=soup[Math.floor(Math.random() * 10)] + "<br>";
 </script>
-</body>
-</html>
